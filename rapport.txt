@@ -41,6 +41,30 @@ Jag fick förslag om att byta några <h1> taggar till mindre taggar, då gjorde 
 
 Jag är nöjd, men jag känner mig inte klar, jag känner att det finns så mycket mer man kan göra, tex att sätta mina bilder i en karusell, men det kräver ju <script> och det skulle vi inte ha i projektarbetet, 
 samt att jag gillar inte min utformning på min telefon-tabell. Finns flera sätt att göra den på men så här tolkade jag uppgifften på.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Jag byggde vidare på mitt projektarbete genom att göra en ny sida att länka in.(exempel.html)
+Denna sidan skapade jag bara för att visa en annan sorts tabell man hade kunnat göra för att presentera telefon-katalogen.
+Jag började med att lägga in en till list rad på mina andra html sidor och la in min nya sida där.
+Sen kopierade jag ifrån doctype ner till där min navbar slutar och klistrade in den i min nya sida.
+Jag skapade en <div class="grid-container"> som jag stylade med att ge den display: grid; och ge resten av sidan grid-temeplate-areas:
+"container container container container container"
+"container container container container container"
+"bottom bottom bottom bottom bottom";
+På så vi kommer jag kunna ha två rader med fem kort i varje sen, samt en footer för att fylla ut sidan.
+Sen skapade jag en <main class="katalog-content"> som jag stylade med grid-area: content; samt samma bakgrundsfärg som jag har på de andra två sidorna.
+Nu gjorde jag en ny div för att skapa mina kort <div class="table-card"> med två klasser i sig, en för min placeholder profilbild (kille/tjej) och en för min table.
+Jag kopierade denna och klistrade in nio stycken till, skrev in alla namn och nummer och valde bild efter vad jag tror är rätt kön.
+I .table-card så använde jag display:grid; samt grid-template-rows: 0.5fr 1fr; och width: 72%;
+Nu ville jag styla mina kort så jag fick börja med att skriva över min gamla style på table genom att skriva för denna specifikt. .profile-card table, th, td { border: none; }
+Sen satte jag en border-bottom på .profile-card så att det ser lite bättre ut för användaren.
+Nu skapade jag en tom footer och stylade den med grid-area: bottom; , samma bakgrundsfärg som jag har på bannern och en fast höjd så att hela bildrutan täcks.
+Jag började med min mediaquerry nu och såg över min sida i responsivt läge, jag började ifrån mobilt läge 320px och drog ut skärmen, när jag hade kommit tillräkligt så la jag in en regel för att visa 2 kolumner per rad.
+Sen fortsatte jag och la in tre kolumner per rad och sista avslutade jag med att lägga in alla fem kolumnerna per rad, så som jag vill ha det på en datorskärm.
+Först så visades bara en kolumn per rad innan jag la in t.ex. @media (min-width: 624px) { .katalog-content { display:grid; grid-template-columns: repeat(2, 1fr);} } med det exemplet så visar jag nu två kolumner med varsin fraktion.
+
+
+
 
 
 
