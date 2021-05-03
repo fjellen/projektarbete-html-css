@@ -1,0 +1,51 @@
+Projektarbete
+
+Jag började med att skapa två stycken .html och en .css fil i visualcode, 
+Sen skrev jag !+tab i båda html filerna för att få all doctype samt meta taggar för responsivt läge. Efter det länkade jag in mi style.css i båda html filerna.
+Nu började jag att styla en banner som jag kunde ha med på båda sidorna.
+Under bannern så ville jag ha en navbar med två knappar för att kunna byta flik, så det fixade jag och kopierade den och la in den i min andra .html fil.
+Ända skilnaden var att jag fick ha en seperat class="active" med en annan background color på respektive Hem, Kontakta oss så det såg ut som att knappen var aktiverad.
+Nu började jag bygga min katalog.html, jag började med att skapa en div med class="katalog-bakgrund" som jag stylade med display:flex och justify-content:center samt allign-items:center, 
+så jag skulle få min katalog centrerad på sidan.
+I katalog-bakgrund så skapade jag katalog-card, tyan jag ska lägga text och tabell på. I den skapade jag <article katalog-rubrik> där jag la en <h2> med min rubrik samt en <h3> med info.
+Nu började jag bygga min tabell, jag la allt i en div som jag kunde styla senare <div class="telefon-lista"> i den så använde jag <table> med 3x10 uppbyggnad med en th.
+Jag stylade inte så mycket min tabell, jag satte en width på 96% för att få lite luft utanför, jag satte en text-align: start; på min th för att på det mer symetriskt, 
+jag satt en 1px border mellan table, th, td för att lättare kunna läsa tabellen.
+Jag satte även mite margins runt rubrikerna för att ge mer utrymme mellan texterna.
+Nu kände jag mig klar med uppbyggnaden av min katalog.html så jag kunde börja med min index.html.
+Jag hade sedan tidigare lagt in samma banner och navbar som i katalog.html, så jag fortsatte med att göra en hem-bakgrund som jag stylade med en färg och satte en brädd på.
+I hem-bakgrund gjorde jag en <main class="content"> altså platsen där allt mitt innehåll ifrån endast den här sidan ska ligga (inte navbar eller banner där samma kod finns på fler sidor).
+I content så gjorde jag en <div class="diamond"> där jag la in en <article> med rubrik och info om min sida.
+Efter min div om info skapade jag en ny div utan en klass, jag skulle bara använda den för att lägga in en rubrik och lite info text om vad jag skulle visa mer.
+Nu skapade jag en ny div, <div class="bilder"> och stylade den med display:flex; flex-direction:row;, så allt jag lägger i denna diven kommer att lägga sig efter varandra och inte under varandra.
+I bilder skapade jag en ny div, <div class="card"> som består av en <img src="" alt=""> samt en ny div <div class="card-container"> för en seperat rad under bilden.
+Jag tog och kopierade min kod så att jag hade tre seperata kort efter varandra, men jag bytte klass på mitt tredje, <div class="card-3"> för att lättare kunna gömma det kortet när sidan ska mobilanpassas.
+Jag valde att länka in bilderna direkt i min html kod, så jag använde <img src=""> och skrev in deras namn, och stylade dem i min css med object-fit: cover;.
+I min css så stylade jag mina kort, använde .card och bestämde höjd, bredd, skuggning, bakgrundsfärg samt en margin-right.
+Nu började det se bra ut på min datorskärm, så jag växlade över i responsivtläge och kollade vad som behövde fixas till mindre skärmar.
+Jag började med att skapa en media.css och imorterade den i min style.css genom att skriva @import 'media.css';.
+Jag kollade på px längden i responsivt läge och insåg att strax under tabblet sorlek så började min text samt bilder bli för stora och tryckte ut varandra.
+Så jag använde @media (max-width: 768px) {} och satte nya regler som gäller för skärmar mindre än 768px. 
+Jag började med att minska texten i mina kort (.card container article h3 { font-size: 0.8rem;}) och slutade visa mitt tredje kort (.card-3 { display: none;}) 
+Samt att jag ville att min bakgrund skulle följa med neråt om man behövde scrolla (.hem-bakgrund { height: 100%;} och att jag fick begränsa bredden på min info del
+(.diamond { width: 20rem;}.
+Nu hade jag gjort så att sidan var anpassade för tabblets men jag hade presic gjort att den bröt upp min höjd på .hem-bakgrund och min bredd på .diamond när skärmen var större än 768px.
+Så jag gjorde en ny @media (min-width: 768px) {} och la in (.hem-bakgrund { height: 81.9vh;} och .diamond {width: 40rem;})
+Nu kollade jag på de olika storlekarna för mobiltelefoner och insåg att jag behöver bara ändra bredden på min info.
+@media (max-width: 335px) { .diamond { width: 15rem;}}.
+Nu så scalade min sida i responsivt läge.
+Jag skapade två nya .css filer, en för min navbar och en för katalogsidan, jag flyttade respektive regler till sina nya filer och importerade sen in dem i min style.css
+Efter det så kollade jag på min kod med ett validerings verktyg validator.w3.org för att se om jag hade en semantisk korrekt html kod. 
+Jag fick förslag om att byta några <h1> taggar till mindre taggar, då gjorde jag det och skrev om min css för de ställen det behövdes, uppdaterade sidan och nu fanns det inga fel eller varningar.
+
+
+Jag är nöjd, men jag känner mig inte klar, jag känner att det finns så mycket mer man kan göra, tex att sätta mina bilder i en karusell, men det kräver ju <script> och det skulle vi inte ha i projektarbetet, 
+samt att jag gillar inte min utformning på min telefon-tabell. Finns flera sätt att göra den på men så här tolkade jag uppgifften på.
+
+
+
+
+
+
+
+

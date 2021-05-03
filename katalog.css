@@ -1,7 +1,7 @@
 .katalog-bakgrund {
     height: 81.9vh;
     width: 100%;
-    background-color: #3742fa;
+    background-color: #a4b0be;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ table, th, td {
 }
 
 .banner-katalog {
-    background-color: #ff4757;
+    background-color: #57606f;
     height: 8rem;
     width: 100%;
     justify-content: center;

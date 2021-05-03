@@ -11,7 +11,7 @@
 
 .hem-bakgrund {
     width: 100%;
-    background-color: #3742fa;
+    background-color: #a4b0be;
 }
 
 .content {
@@ -35,7 +35,7 @@ article h2 {
     width: 21rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    background-color: #ffa502;
+    background-color: #57606f;
     margin-right: 10px;
 }
 
@@ -54,7 +54,7 @@ article h2 {
     width: 21rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    background-color: #ffa502;
+    background-color: #57606f;
     margin-right: 10px;
 }
 
@@ -78,7 +78,7 @@ article h2 {
 }
 
 .banner-hem {
-      background-color: #ff4757;
+      background-color: #57606f;
       height: 8rem;
       width: 100%;
       justify-content: center;
