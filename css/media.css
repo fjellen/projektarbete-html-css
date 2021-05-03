@@ -35,3 +35,23 @@
         width: 15rem;
     }
 }
+
+@media (min-width: 624px){
+    .katalog-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px){
+    
+    .katalog-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+    }
+}
+@media (min-width: 1420px){
+        .katalog-content {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+}

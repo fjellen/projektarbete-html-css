@@ -1,0 +1,46 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "content content content content content"
+    "content content content content content"
+    "bottom bottom bottom bottom bottom";
+}
+
+.katalog-content {
+    grid-area: content;
+    background-color: #a4b0be;
+    padding: 2rem;
+}
+
+.table-card {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    margin-bottom: 3rem;
+    width: 72%;
+}
+
+.card-picture img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-card th{
+    margin: 0.3rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 2rem;
+}
+
+.profile-card {
+    border-bottom: 2px solid #2f3542;
+}
+
+.profile-card table, th, td {
+    border: none;
+}
+
+footer {
+    grid-area: bottom;
+    background-color: #57606f;
+    height: 13.6rem;
+}
