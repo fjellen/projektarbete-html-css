@@ -1,0 +1,50 @@
+.katalog-bakgrund {
+    height: 81.9vh;
+    width: 100%;
+    background-color: #3742fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.katalog-card {
+    height: 30rem;
+    width: 50rem;
+    background-color: white;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.katalog-rubrik h2 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.katalog-rubrik h3 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.telefon-lista table {
+    width: 96%;
+    margin-left: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #2f3542;
+}
+
+.telefon-lista table th {
+    text-align: start;
+}
+
+.banner-katalog {
+    background-color: #ff4757;
+    height: 8rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .card-container article h3 {
+        font-size: 0.8rem;
+    }
+
+    .card-3 {
+        display: none;
+    }
+
+    .diamond {
+        width: 20rem;
+    }
+    
+    .hem-bakgrund {
+        height: 100%;
+    }
+
+    .card-container article p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .diamond {
+        width: 40rem;
+    }
+
+    .hem-bakgrund {
+        height: 81.9vh;
+    }
+}
+
+@media (max-width: 335px) {
+    .diamond {
+        width: 15rem;
+    }
+}
